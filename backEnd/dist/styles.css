@@ -1,0 +1,686 @@
+/***** Colors *****/
+/*Fonts*/
+@font-face {
+  font-family: 'Rubik', sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Rubik:400,500,700");
+}
+
+@font-face {
+  font-family: 'Raleway', sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Raleway:300,400,500");
+}
+
+/****************************** LogIN ******************************/
+body, .container-fluid {
+  background-color: #F5F5F5;
+}
+
+.logIn {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/backIMG2.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.logIn img {
+  width: 250px;
+  padding-top: 125px;
+  padding-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logIn .logInInfo, .logIn .logInInfo2 {
+  position: relative;
+  left: 50%;
+  margin-left: -150px;
+}
+
+.logIn .logInInfo label, .logIn .logInInfo2 label {
+  color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.logIn .logInInfo input, .logIn .logInInfo2 input {
+  width: 300px;
+  border-radius: 0px;
+}
+
+.logIn .logInInfo input[type="submit"], .logIn .logInInfo2 input[type="submit"] {
+  padding-top: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: 100%;
+  display: block;
+  position: relative;
+  float: left;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 46px;
+  color: #ffffff;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border-radius: 0px;
+  /* FADE */
+  width: 300px;
+  background-color: #78909C;
+}
+
+.logIn .logInInfo input[type="submit"]:hover, .logIn .logInInfo2 input[type="submit"]:hover {
+  background: #48565d;
+  color: #ffffff;
+}
+
+.logIn .logInInfo2 {
+  margin-top: 40px;
+}
+
+/****************************** Sidebar ******************************/
+.sidebar {
+  height: 100vh;
+  background-color: #78909C;
+  text-align: center;
+}
+
+.sidebar .col-md-3 {
+  padding: 0;
+}
+
+.sidebar img {
+  margin-top: 40px;
+  width: 180px;
+}
+
+.sidebar ul {
+  margin-top: 80px;
+}
+
+.sidebar a {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.sidebar a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sidebar li {
+  height: 60px;
+  padding-top: 20px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.sidebar li:hover {
+  background-color: rgba(72, 86, 93, 0.2);
+  color: #ffffff;
+}
+
+/****************************** Dashboard ******************************/
+.dashRight {
+  height: 100vh;
+  overflow: scroll;
+}
+
+.panel {
+  height: 475px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+}
+
+.panel-body {
+  padding: 20px 15px;
+}
+
+.btn-xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+.firstIcon {
+  background-color: #00CB9C;
+  color: #ffffff;
+}
+
+.secoundIcon {
+  background-color: #03A9F4;
+  color: #ffffff;
+}
+
+.thirdIcon {
+  background-color: #E91E63;
+  color: #ffffff;
+}
+
+.fourthIcon {
+  background-color: #FFEE58;
+  color: #ffffff;
+}
+
+.fifthIcon {
+  background-color: #B388FF;
+  color: #ffffff;
+}
+
+.dashTitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  color: #78909C;
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.theBlue, .theGreen, .thePink, .theYellow {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+}
+
+.theYellow {
+  color: #FFEE58;
+}
+
+.thePink {
+  color: #E91E63;
+}
+
+.theBlue {
+  color: #03A9F4;
+}
+
+.theGreen {
+  color: #00CB9C;
+}
+
+.thePurple {
+  color: #B388FF;
+}
+
+.thePrimary {
+  color: #78909C;
+}
+
+.theBrown {
+  color: #795548;
+}
+
+.task-content {
+  margin-bottom: 10px;
+}
+
+.dashAdd, .dashAdd2 {
+  background-color: #78909C;
+  color: #ffffff;
+  margin-top: 2px;
+}
+
+.dashAdd2 {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.dashUserLi {
+  position: relative;
+  display: block;
+  padding: 5px 20px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+.dashUserLi img {
+  width: 30px;
+}
+
+/****************************** All User Side ******************************/
+.userTop {
+  height: 60px;
+  text-align: center;
+  border-bottom: 1px #78909C solid;
+}
+
+.userTop h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.375em;
+  font-weight: 500;
+  color: #78909C;
+  padding-top: 20px;
+}
+
+/****************************** Userlist ******************************/
+.userTable {
+  margin-top: 50px;
+}
+
+.userTable thead {
+  background-color: #78909C;
+}
+
+.userTable thead th {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: lighter;
+  font-weight: lighter;
+  color: #ffffff;
+}
+
+.userTable tbody {
+  background-color: #ffffff;
+}
+
+.userTable tbody th, .userTable tbody td {
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.875em;
+  color: #424242;
+  font-weight: lighter;
+}
+
+.userTable button {
+  width: 183px;
+  height: 40px;
+  background-color: #78909C;
+  border: 0px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.875em;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.userTable button:hover {
+  background-color: rgba(108, 129, 140, 0.9);
+  color: #ffffff;
+}
+
+.userTable button:focus {
+  outline: none;
+}
+
+/****************************** Form ******************************/
+.createForm {
+  display: none;
+}
+
+.createForm, .createForm1 {
+  width: 550px;
+  height: 92vh;
+  position: absolute;
+  right: 0;
+  top: 59px;
+  z-index: 99999999;
+  background-color: #F5F5F5;
+}
+
+.createForm .upperLine, .createForm1 .upperLine {
+  height: 10px;
+  background-color: #78909C;
+}
+
+.createForm h3, .createForm1 h3 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+  color: #424242;
+  text-transform: uppercase;
+  padding: 13px 0px 9px 50px;
+  border-bottom: 2px #ffffff solid;
+}
+
+.createForm label, .createForm1 label {
+  margin-left: 50px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  color: #424242;
+}
+
+.createForm .span, .createForm1 .span {
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.875em;
+  color: #424242;
+  font-weight: lighter;
+}
+
+.createForm input, .createForm textarea, .createForm1 input, .createForm1 textarea {
+  width: 450px;
+  line-height: 20px;
+  margin-left: 50px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 0px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.875em;
+  color: #424242;
+  font-weight: lighter;
+}
+
+.createForm ul, .createForm1 ul {
+  padding-left: 0px;
+}
+
+.createForm .createSubmit, .createForm1 .createSubmit {
+  position: absolute;
+  bottom: 0;
+  width: 550px;
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+}
+
+.createForm .createSubmit input, .createForm1 .createSubmit input {
+  width: 183px;
+  height: 40px;
+  background-color: #78909C;
+  margin-left: 0px;
+  border-radius: 0px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.875em;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.createForm .createSubmit input:hover, .createForm1 .createSubmit input:hover {
+  background-color: rgba(108, 129, 140, 0.9);
+  color: #ffffff;
+}
+
+.createForm .createSubmit input:focus, .createForm1 .createSubmit input:focus {
+  outline: none;
+}
+
+.createForm .editSubmit, .createForm1 .editSubmit {
+  position: absolute;
+  bottom: 0;
+  width: 550px;
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+}
+
+.createForm .editSubmit input[id="closeEditUser"], .createForm .editSubmit input[value="Update User"],
+.createForm .editSubmit input[id="closeEditCategory"], .createForm .editSubmit input[value="Update Category"],
+.createForm .editSubmit input[id="closeEditPage"], .createForm .editSubmit input[value="Update Page"], .createForm1 .editSubmit input[id="closeEditUser"], .createForm1 .editSubmit input[value="Update User"],
+.createForm1 .editSubmit input[id="closeEditCategory"], .createForm1 .editSubmit input[value="Update Category"],
+.createForm1 .editSubmit input[id="closeEditPage"], .createForm1 .editSubmit input[value="Update Page"] {
+  width: 275px;
+  height: 40px;
+  margin-left: 0px;
+  text-align: center;
+  background-color: #78909C;
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.875em;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.createForm .editSubmit input[id="closeEditUser"]:hover, .createForm .editSubmit input[value="Update User"]:hover,
+.createForm .editSubmit input[id="closeEditCategory"]:hover, .createForm .editSubmit input[value="Update Category"]:hover,
+.createForm .editSubmit input[id="closeEditPage"]:hover, .createForm .editSubmit input[value="Update Page"]:hover, .createForm1 .editSubmit input[id="closeEditUser"]:hover, .createForm1 .editSubmit input[value="Update User"]:hover,
+.createForm1 .editSubmit input[id="closeEditCategory"]:hover, .createForm1 .editSubmit input[value="Update Category"]:hover,
+.createForm1 .editSubmit input[id="closeEditPage"]:hover, .createForm1 .editSubmit input[value="Update Page"]:hover {
+  background-color: rgba(108, 129, 140, 0.9);
+  color: #ffffff;
+}
+
+.createForm .editSubmit input[id="closeEditUser"]:focus, .createForm .editSubmit input[value="Update User"]:focus,
+.createForm .editSubmit input[id="closeEditCategory"]:focus, .createForm .editSubmit input[value="Update Category"]:focus,
+.createForm .editSubmit input[id="closeEditPage"]:focus, .createForm .editSubmit input[value="Update Page"]:focus, .createForm1 .editSubmit input[id="closeEditUser"]:focus, .createForm1 .editSubmit input[value="Update User"]:focus,
+.createForm1 .editSubmit input[id="closeEditCategory"]:focus, .createForm1 .editSubmit input[value="Update Category"]:focus,
+.createForm1 .editSubmit input[id="closeEditPage"]:focus, .createForm1 .editSubmit input[value="Update Page"]:focus {
+  outline: none;
+}
+
+.createForm input[type="userCancel"], .createForm input[type="userDelete"],
+.createForm input[type="categoryCancel"], .createForm input[type="categoryDelete"], .createForm1 input[type="userCancel"], .createForm1 input[type="userDelete"],
+.createForm1 input[type="categoryCancel"], .createForm1 input[type="categoryDelete"] {
+  border-right: 1px solid #ffffff;
+}
+
+.createForm input[type="userCancel"]:focus, .createForm input[type="userDelete"]:focus,
+.createForm input[type="categoryCancel"]:focus, .createForm input[type="categoryDelete"]:focus, .createForm1 input[type="userCancel"]:focus, .createForm1 input[type="userDelete"]:focus,
+.createForm1 input[type="categoryCancel"]:focus, .createForm1 input[type="categoryDelete"]:focus {
+  outline: none;
+}
+
+/****************************** Create User ******************************/
+.twoItemsInLine {
+  width: 450px;
+}
+
+.twoItemsInLine .logInInfo {
+  width: 225px;
+  float: left;
+}
+
+.twoItemsInLine .logInInfo label {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  color: #424242;
+}
+
+.twoItemsInLine .logInInfo input[name="create_email"],
+.twoItemsInLine .logInInfo input[name="create_card_address"],
+.twoItemsInLine .logInInfo input[name="create_card_location_lat"],
+.twoItemsInLine .logInInfo input[name="update_card_address"],
+.twoItemsInLine .logInInfo input[name="update_card_location_lat"] {
+  width: 96%;
+  border: none;
+  border-radius: 0px;
+}
+
+.twoItemsInLine .logInInfo input[name="create_email"]:focus,
+.twoItemsInLine .logInInfo input[name="create_card_address"]:focus,
+.twoItemsInLine .logInInfo input[name="create_card_location_lat"]:focus,
+.twoItemsInLine .logInInfo input[name="update_card_address"]:focus,
+.twoItemsInLine .logInInfo input[name="update_card_location_lat"]:focus {
+  outline: none;
+}
+
+.twoItemsInLine .logInInfo input[name="create_phoneNumber"],
+.twoItemsInLine .logInInfo input[name="create_card_phoneNumber"],
+.twoItemsInLine .logInInfo input[name="create_card_location_lon"],
+.twoItemsInLine .logInInfo input[name="update_card_phoneNumber"],
+.twoItemsInLine .logInInfo input[name="update_card_location_lon"] {
+  width: 99%;
+  border: none;
+  border-radius: 0px;
+}
+
+.twoItemsInLine .logInInfo input[name="create_phoneNumber"]:focus,
+.twoItemsInLine .logInInfo input[name="create_card_phoneNumber"]:focus,
+.twoItemsInLine .logInInfo input[name="create_card_location_lon"]:focus,
+.twoItemsInLine .logInInfo input[name="update_card_phoneNumber"]:focus,
+.twoItemsInLine .logInInfo input[name="update_card_location_lon"]:focus {
+  outline: none;
+}
+
+/****************************** Page ******************************/
+.pageCategoryBox {
+  margin-top: 50px;
+  width: 750px;
+  background-color: #ffffff;
+  border-radius: 1px;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, 0.05);
+}
+
+.pageCategoryBox .pageCategoryName {
+  height: 100px;
+  /*************** Open/Close ***************/
+}
+
+.pageCategoryBox .pageCategoryName img {
+  width: 35px;
+  float: left;
+  padding-top: 27px;
+  margin-left: 25px;
+}
+
+.pageCategoryBox .pageCategoryName p {
+  padding: 38px 80px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 0.875em;
+  color: #424242;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.pageCategoryBox .pageCategoryName .hamburger-menu {
+  position: relative;
+  right: 55px;
+  bottom: 73px;
+  margin: auto;
+  width: 15px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.pageCategoryBox .pageCategoryName .bar, .pageCategoryBox .pageCategoryName .bar:after, .pageCategoryBox .pageCategoryName .bar:before {
+  width: 15px;
+  height: 2px;
+}
+
+.pageCategoryBox .pageCategoryName .bar {
+  position: relative;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  background: #424242;
+  -webkit-transition: all 0ms 300ms;
+  transition: all 0ms 300ms;
+}
+
+.pageCategoryBox .pageCategoryName .bar.animate {
+  background: rgba(255, 255, 255, 0);
+}
+
+.pageCategoryBox .pageCategoryName .bar:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  background: #424242;
+  -webkit-transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.pageCategoryBox .pageCategoryName .bar:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  background: #424242;
+  -webkit-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.pageCategoryBox .pageCategoryName .bar.animate:after {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.pageCategoryBox .pageCategoryName .bar.animate:before {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.pageCategoryBox .pageCategoryBody {
+  display: none;
+}
+
+.pageCategoryBox .pageCategoryBody ol li {
+  padding: 10px 10px;
+}
+
+.pageCategoryBox .pageCategoryBody button {
+  margin: 10px;
+}
+
+.pageCategoryBox .pageCategoryBody button:focus {
+  outline: none;
+}
+
+.pageCategoryBox .pageCategoryBody .pageCategoryBodyLi {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.pageCategoryBox .pageCategoryBody .pageCategoryBodyLi p {
+  width: 85%;
+}
+
+.pageCategoryBox .pageCategoryBody .pageCategoryBodyLi .editDeletePage {
+  float: right;
+}
+
+/******* Blur *******/
+.blur {
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+ul.card_allButtons {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.card_allButtons {
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 -1px 0;
+  bottom: 0;
+}
+
+.card_allButtons li {
+  width: 33.3%;
+}

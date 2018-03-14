@@ -1,0 +1,224 @@
+/* Layouts */
+.wrapper {
+  min-height: 100%;
+}
+.wrapper:before,
+.wrapper:after {
+  display: table;
+  content: " ";
+}
+.wrapper:after {
+  clear: both;
+}
+/* Header - Define 2 column template */
+.right-side,
+.left-side {
+  min-height: 100%;
+  display: block;
+}
+/*right side - contins main content*/
+.right-side {
+  background-color: #f1f2f7;
+  margin-left: 220px;
+}
+/*left side - contains sidebar*/
+.left-side {
+  position: absolute;
+  width: 220px;
+  top: 0;
+}
+/*Efsta línan*/
+.sm-st {
+  background:#fff;
+  padding:20px;
+  margin-top: 20px;
+  margin-bottom:20px;
+  -webkit-box-shadow: 0 1px 0px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 0px rgba(0,0,0,0.05);
+}
+.btn-default {
+  color: #78909C;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.sm-st-icon {
+  width:60px;
+  height:60px;
+  display:inline-block;
+  line-height:60px;
+  text-align:center;
+  font-size:30px;
+  background:#eee;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  float:left;
+  margin-right:10px;
+  color:#fff;
+}
+.sm-st-info {
+  font-size:12px;
+  padding-top:2px;
+}
+.sm-st-info span {
+  display:block;
+  font-size:24px;
+  font-weight:600;
+  color: #78909C;
+}
+/* Content */
+.content {
+  padding: 20px 15px;
+  background: #F5F5F5;
+  overflow: auto;
+}
+/* Page Header */
+.page-header {
+  margin: 10px 0 20px 0;
+  font-size: 22px;
+}
+.page-header > small {
+  color: #666;
+  display: block;
+  margin-top: 5px;
+}
+/* All images should be responsive */
+.sort-highlight {
+  background: #f4f4f4;
+  border: 1px dashed #ddd;
+  margin-bottom: 10px;
+}
+/* 10px padding and margins */
+.pad {
+  padding: 20px 10px 10px;
+}
+.margin {
+  margin: 10px;
+}
+.pad-20 {
+  padding: 20px;
+}
+/* Display inline */
+.inline {
+  display: inline;
+  width: auto;
+}
+/*alert*/
+.alert-danger {
+  background-color: #fad5d5;
+}
+.alert-success {
+  background-color: #cffabd;
+}
+.alert-warning {
+  background-color: #fcf4c9;
+}
+/*badge colors ProgressBar*/
+.badge-success {
+  background-color: #27C24C;
+  color: #DFF5E4;
+}
+.badge-warning {
+  background-color: #FAD733;
+  color: #FDF8E5;
+}
+.badge-info {
+  background-color: #23B7E5;
+  color: #E3F6FC;
+}
+.badge-danger {
+  background-color: #F05050;
+  color: #FAE6E6;
+}
+.badge-primary {
+  background-color: #4697ce;
+}
+.badge-inverse {
+  background-color: #4f5259;
+  color: #DFE2F0;
+}
+.badge, .label {
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+/*label*/
+.label-primary {
+  background-color: #4697ce;
+}
+.label-default {
+  background-color: #a1a1a1;
+}
+.label-success {
+  background-color: #27C24C;
+  color: #DFF5E4;
+}
+.label-info {
+  background-color: #23B7E5;
+  color: #E3F6FC;
+}
+.label-inverse {
+  background-color: #4f5259;
+  color: #DFE2F0;
+}
+.label-warning {
+  background-color: #FAD733;
+  color: #FDF8E5;
+}
+.label-danger {
+  background-color: #F05050;
+  color: #FAE6E6;
+}
+
+.twt-area {
+  border-bottom: 1px dotted #eee;
+  margin-bottom: 5px;
+  padding-bottom: 3px;
+}
+.twt-area textarea {
+  margin-bottom: 3px;
+}
+
+.bg-white {background-color: #fff !important;}
+.bg-gray {background-color: #eaeaec !important;}
+.bg-black {background-color: #222222 !important;}
+.bg-red {background-color: #F05050 !important;}
+.bg-yellow {background-color: #FAD733 !important;}
+.bg-aqua {background-color: #4FC1E9 !important}
+.bg-blue {background-color: #0073b7 !important;}
+.bg-light-blue {background-color: #3c8dbc !important;}
+.bg-green {background-color: #27C24C  !important;}
+.bg-navy {background-color: #001f3f !important;}
+.bg-teal {background-color: #39cccc !important;}
+.bg-olive {background-color: #3d9970 !important;}
+.bg-lime { background-color: #01ff70 !important; }
+.bg-orange { background-color: #ff851b !important; }
+
+/*--------------Tasks Widget--------------*/
+
+.task-content {
+    margin-bottom: 30px;
+}
+.tasks-widget  .task-list {
+  padding:0;
+  margin:0;
+}
+ul.task-list {
+  list-style: none;
+}
+.tasks-widget .task-list > li {
+  position:relative;
+  padding:10px 5px;
+  border-bottom:1px dashed #eaeaea;
+}
+.tasks-widget .task-list  li .task-title .task-title-sp  {
+  margin-right:5px;
+}
+.tasks-widget .task-list  li.task-done  { background:#f6f6f6; }
+.tasks-widget .task-list  li.task-done:hover { background:#f4f4f4; }
+.tasks-widget .task-list  li:hover  { background:#f9f9f9; }
+
+.table-responsive th{
+ color: #78909C;
+}
